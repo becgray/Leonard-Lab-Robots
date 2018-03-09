@@ -46,7 +46,7 @@ rosrun kobuki_ftdi create_udev_rules
 ```
 
 ### Launch files
-Copy the kobuki_labcontrol folder to /catkin_ws/src, then
+Copy the kobuki_labcontrol (from USB) folder to /catkin_ws/src, then
 ```
 ch ~catkin_ws
 catkin_make
