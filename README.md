@@ -54,7 +54,9 @@ catkin_make
 Make sure the name for each is correct.
 
 ### Autostart
-Copy the autostart folder to /home/ubuntu and ```chmod``` each file. Set up a new cron job via
+Copy the autostart folder to /home/ubuntu and update "start_roslaunch" to include the correct IP.
+```chmod``` each file. 
+Set up a new cron job via:
 ```
 crontab -e
 ```
