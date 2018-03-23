@@ -10,7 +10,7 @@ Setup info the the Leonard Lab Robots
 sudo visudo
 ubuntu ALL=(ALL) NOPASSWD:ALL
 ```
-1. From ubiquity robots: `sudo systemctl disable magnibase`
+1. From ubiquity robots: `sudo systemctl disable magni-base`
 1. On wifi: 
 ```
 sudo apt-get update
@@ -48,7 +48,7 @@ rosrun kobuki_ftdi create_udev_rules
 ### Launch files
 Copy the kobuki_labcontrol (from USB) folder to /catkin_ws/src, then
 ```
-ch ~catkin_ws
+cd ~catkin_ws
 catkin_make
 ```
 Make sure the name for each is correct.
