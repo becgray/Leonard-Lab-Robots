@@ -11,7 +11,7 @@ sudo visudo
 ubuntu ALL=(ALL) NOPASSWD:ALL
 ```
 1. From ubiquity robots: `sudo systemctl disable magni-base`
-1. On wifi: 
+1. update and upgrade “apt-get” (internet connection required)
 ```
 sudo apt-get update
 sudo apt-get upgrade
@@ -28,6 +28,7 @@ autologin-user-timeout=0
 ```
 
 ### Getting ROS and Kobukis ready
+This section is from http://wiki.ros.org/kobuki/Tutorials/Installation
 **Install Kobuki**
 To install Kobuki packages:
 ```
@@ -53,6 +54,8 @@ catkin_make
 ```
 Make sure the name for each is correct.
 
+
+
 ### Autostart
 Copy the autostart folder to /home/ubuntu and update "start_roslaunch" to include the correct IP.
 ```chmod``` each file. 
@@ -67,3 +70,18 @@ Then at the bottom:
 ```
 
 Cross your fingers and reboot!
+
+### Sidenotes: If Firefox crashes all the time
+This solution is from https://ubuntuforums.org/showthread.php?t=2382079
+**Install Firefox ESR**
+```
+sudo add-apt-repository ppa:mozillateam/ppa
+sudo apt-get update
+sudo apt-get install firefox-esr
+```
+You may also want to uninstall the built-in problematic Firefox
+```
+sudo apt-get remove firefox
+```
+
+
